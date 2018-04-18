@@ -1,0 +1,24 @@
+.sticky-header {
+    color: #0c2e8a;;
+      font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+.sticky-header span {
+  color: #50d8af;;
+}
+.sticky-header .navbar-brand {
+  color: #0c2e8a;;
+}
+.color-white {
+  color : #fff;
+}
+.color-green {
+  color: #50d8af;
+}
+.mr5 {
+  margin-right: 5px;
+}
+
+.w15 {
+  width:15px;
+}

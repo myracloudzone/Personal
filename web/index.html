@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org" ng-app="GMApp" ng-controller="mainCtrl">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Grownix Solution</title>
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="/app/assets/angular/css/library/bootstrap.css" rel="stylesheet"> -->
+    <link href="/app/assets/angular/css/style.css" rel="stylesheet">
+    <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0/angular-material.min.css">
+    <link href='/app/assets/angular/css/library/sweetAlert.css' rel='stylesheet' />
+    <link href='/app/assets/angular/css/library/pnotify.custom.min.css' rel='stylesheet' />
+    <link href='/app/assets/angular/css/library/autocomplete.min.css' rel='stylesheet' />
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.0.0/pnotify.css' rel='stylesheet' />
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.0.0/pnotify.buttons.css' rel='stylesheet' />
+    <link rel="stylesheet" href="/app/assets/angular/css/library/ui-grid.css" type="text/css" />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.css" rel="stylesheet">
+    
+    <link href="https://unpkg.com/ng-material-datetimepicker@1.9.6/dist/material-datetimepicker.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="/app/assets/angular/css/library/select2.css" rel="stylesheet" type="text/css">
+    
+    <link href="/app/assets/angular/css/library/mdColorPicker.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.print.css" rel="stylesheet"> -->
+    
+    
+    <!-- Custom fonts for this template-->
+    <link href="/app/assets/angular/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/> 
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+
+    <!-- Load Custom CSS -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+    
+    <!-- CSS
+    ================================================== -->
+    <!-- Themefisher Icon font -->
+    <link rel="stylesheet" href="/app/assets/angular/libs/plugins/themefisher-font/style.css">
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="/app/assets/angular/libs/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet" href="/app/assets/angular/libs/plugins/lightbox2/dist/css/lightbox.min.css">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="/app/assets/angular/libs/plugins/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/app/assets/angular/libs/plugins/slick-carousel/slick/slick-theme.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/app/assets/angular/css/custom-style.css">
+  
+  
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="/app/assets/angular/css/colors/green.css" title="green">
+    <link rel="stylesheet" type="text/css" href="/app/assets/angular/css/colors/red.css" title="light-red">
+    <link rel="stylesheet" type="text/css" href="/app/assets/angular/css/colors/blue.css" title="blue">
+    <link rel="stylesheet" type="text/css" href="/app/assets/angular/css/colors/light-blue.css" title="light-blue">
+    <link rel="stylesheet" type="text/css" href="/app/assets/angular/css/colors/yellow.css" title="yellow">
+    <link rel="stylesheet" type="text/css" href="/app/assets/angular/css/colors/light-green.css" title="light-green">
+
+
+
+    <base href="/">
+</head>
+
+<body class="" id="body">
+    <!-- <div ng-view></div> -->
+    <div ui-view></div>
+    <!-- App -->
+    <!--Load Custom JS  -->
+    <script src="/app/assets/angular/libs/plugins/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="/app/assets/angular/libs/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Parallax -->
+    <script src="/app/assets/angular/libs/plugins/parallax/jquery.parallax-1.1.3.js"></script>
+    <!-- lightbox -->
+    <script src="/app/assets/angular/libs/plugins/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="/app/assets/angular/libs/moment.min.js"></script>
+    <script src="/app/assets/angular/libs/moment-with-timezone.min.js"></script>
+    <script src='/app/assets/angular/libs/pnotify.custom.min.js'></script>
+    <!-- App scripts -->
+    <script src="/app/assets/angular/libs/angular/angular.min.js"></script>
+    <script src="/app/assets/angular/libs/angular/angular-resource.min.js"></script>
+    <script src="/app/assets/angular/libs/angular/angular-route.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.0/angular-material.min.js"></script>
+    <script src="/app/assets/angular/libs/sweetAlert.js"></script>
+    <script src="/app/assets/angular/libs/angular/angular-ui-router.min.js"></script>
+    <script src="/app/assets/angular/libs/angular/ui-bootstrap-tpls.min.js"></script>
+    <script src="/app/assets/angular/libs/angular/angular-barcode.js"></script>
+    
+    <script src="/app/assets/angular/libs/tinyColor.js"></script>
+    <script src="/app/assets/angular/libs/mdColorPicker.js"></script>
+    
+
+    <script src="https://unpkg.com/ng-material-datetimepicker@1.9.6/dist/angular-material-datetimepicker.min.js"></script>
+    <script src="https://unpkg.com/ng-material-datetimepicker@1.9.6/dist/angular-material-datetimepicker.min.js.map"></script>
+    <script src="/app/assets/angular/libs/angular/angular-ui-switch.js"></script>
+    <!-- <script src="/app/assets/angular/libs/angular/angular-local-storage.min.js"></script> -->
+    <!-- <script src="/app/assets/angular/libs/angular/angular-cookies-custom.js"></script> -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular-cookies.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.15.2/angular-translate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.15.2/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <!-- <script type="text/javascript" src="/app/assets/angular/libs/angular/angular-css-injector.js"></script> -->
+    <!-- <script src="/app/assets/angular/libs/angular-async.min.js"></script> -->
+    <script src="/app/assets/angular/libs/ui-grid.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.0.0/pnotify.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.0.0/pnotify.confirm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.0.0/pnotify.buttons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pnotify/3.0.0/pnotify.buttons.js"></script>
+    <script type="text/javascript" src="/app/assets/angular/libs/angular-pnotify.js"></script>
+    <script src="app/assets/angular/libs/lodash.js"></script>
+    <script src="/app/assets/angular/libs/angular/ipcookie.js"></script>
+    <script src="/app/assets/angular/libs/angular/stateEvents.js"></script>
+    <script src="/app/assets/angular/libs/autocomplete.min.js"></script>
+    <script src="/app/assets/angular/libs/angular-select2.js"></script>
+    <script src="/app/assets/angular/libs/ui-multiselect.js"></script>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.5/angular-nvd3.min.js"></script>
+
+    <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+
+    
+    <!-- slick Carousel -->
+    <script src="/app/assets/angular/libs/plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Portfolio Filtering -->
+    <script src="/app/assets/angular/libs/plugins/mixitup/dist/mixitup.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="/app/assets/angular/libs/plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+    
+    <!-- Injection Module -->
+    <script src="/app/appModule/app.js"></script>
+    <!-- inject:angular:js-->
+    <script src="/app/assets/angular/js/directives/CommonUtils.js"></script>
+    <script src="/app/assets/angular/js/services/commonUtils/GlobalVariableService.js"></script>
+    <script src="/app/assets/angular/js/services/commonUtils/GlobalMethodService.js"></script>
+    <script src="/app/appModule/run/AppRun.js"></script>
+    <script src="/app/appModule/config/routeConfig.js"></script>
+    <script src="/app/appModule/interceptor/RequestInterceptor.js"></script>
+    <script src="/app/assets/angular/js/controllers/HomeCtrl.js"></script>
+    
+</body>
+</html>
