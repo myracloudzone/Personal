@@ -22,3 +22,17 @@
 .w15 {
   width:15px;
 }
+.dropLink {
+  font-size: 20px;
+  position: relative;
+}
+
+.darkHeader {
+  background: rgba(0,0,0,0.8);
+}
+
+.team2 {
+  padding: 100px 0;
+  padding-bottom: 10px !important;
+  background: #F6F6F6;
+}

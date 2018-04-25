@@ -1,0 +1,74 @@
+<div ng-include="'/app/assets/angular/views/header.html'" ng-controller="HeaderCtrl"></div>
+<section class="service-2 section">
+    <div class="container">
+        <div class="row">
+            <div class="text-center"  >
+                <h2>Get In Touch</h2>
+                <div class="border"></div>
+            </div>
+            <div class="contact-details col-md-6 ">
+                <span style="font-size: 28px; font-weight: 600">Contact Details</span>
+                <p>Grownix Solution is here to provide you with more information, answer any question you may have.</p>
+                <ul class="contact-short-info">
+                    <li>
+                        <i class="tf-ion-ios-home"></i>
+                        <span>Grownix Solution, Vijay Path, Sodala, Jaipur, Rajasthan</span>
+                    </li>
+                    <li>
+                        <i class="tf-ion-android-phone-portrait"></i>
+                        <span>Phone: +91-7877439550 / +91-9571785777</span>
+                    </li>
+                    <li>
+                        <i class="tf-ion-android-globe"></i>
+                        <span>Fax: +91-7877439550</span>
+                    </li>
+                    <li>
+                        <i class="tf-ion-android-mail"></i>
+                        <span>Email: mailakkiy@gmail.com</span>
+                    </li>
+                </ul>
+                <div class="social-icon">
+                    <ul>
+                        <li><a href="#"><i class="tf-ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i class="tf-ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i class="tf-ion-social-dribbble-outline"></i></a></li>
+                        <li><a href="#"><i class="tf-ion-social-linkedin-outline"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 plr0">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.234982582826!2d75.77372065049047!3d26.896036583052013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db469a4f6a8bd%3A0x23e3df17486d34b5!2sSita+Ram+Colony%2C+Ramnagar%2C+Jaipur%2C+Rajasthan+302007!5e0!3m2!1sen!2sin!4v1524674622643" frameborder="0" style="border:0; width: 100%; height: 240px; margin-top: 10px;"></iframe>
+                </div>
+            </div>
+            <div class="contact-form col-md-6 ">
+                <h5>Fill out the form, we will reach out to you as soon as possible.</h5>
+                <form id="contact-form" method="post" role="form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
+                    </div>
+                    <div class="form-group">
+                            <input type="text" placeholder="Mobile No." class="form-control" name="mobile" id="mobile">
+                        </div>
+                    <div class="form-group">
+                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>	
+                    </div>
+                    <div id="mail-success" class="success">
+                        Thank you. The Mailman is on His Way :)
+                    </div>
+                    <div id="mail-fail" class="error">
+                        Sorry, don't know what happened. Try later :(
+                    </div>
+                    <div id="cf-submit">
+                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<div ng-include="'/app/assets/angular/views/footer.html'"></div>

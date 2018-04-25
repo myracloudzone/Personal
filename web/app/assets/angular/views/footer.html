@@ -1,258 +1,51 @@
-<footer class="sticky-footer">
-  <div class="container">
-    <div class="text-center">
-      <small>Copyright © <b>Myra Solutions</b> 2017</small>
-    </div>
-  </div>
-</footer>
-<a class="scroll-to-top rounded" href="" ng-controller="NavigationCtrl" ng-click="scrollToTop()">
-  <i class="fa fa-angle-up"></i>
-</a>
-
-
-
-<div ng-include="'/app/assets/angular/views/header.html'"></div>
-<section id="intro">
-    <div class="intro-content">
-        <h2>Making <span style="font-size: 60px;">your ideas</span><br>happen!</h2>
-        <div>
-        <a href="#about" class="btn-get-started scrollto">Get Started</a>
-        <a href="#portfolio" class="btn-projects scrollto">Our Projects</a>
-        </div>
-    </div>
-
-    <div id="intro-carousel" class="owl-carousel" >
-        <div class="item" style="background-image: url('/app/assets/angular/images/intro-carousel/1.jpg');">
-        </div>
-        <div class="item" style="background-image: url('/app/assets/angular/images/intro-carousel/2.jpg');">
-        </div>
-        <div class="item" style="background-image: url('/app/assets/angular/images/intro-carousel/3.jpg');">
-        </div>
-        <div class="item" style="background-image: url('/app/assets/angular/images/intro-carousel/4.jpg');">
-        </div>
-        <div class="item" style="background-image: url('/app/assets/angular/images/intro-carousel/5.jpg');">
-        </div>
-    </div>
-</section>
-<main id="main">
-    <section id="about" class="wow fadeInUp">
+<footer id="footer" class="bg-one">
+    <div class="top-footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 about-img">
-                <img src="/app/assets/angular/images/about-img.jpg" alt="">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <h3>about</h3>
+                    <p>We have been applying the cutting edge of technology to power digital transformation in the field of technology and global corporations alike — across all major platforms and tech stacks.</p>
                 </div>
-
-                <div class="col-lg-6 content">
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
-                    <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-
+                <div class="col-sm-3 col-md-3 col-lg-3">
                     <ul>
-                        <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                        <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                        <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                        <li>
+                            <h3>Our Services</h3>
+                        </li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Automating Testing, QA</a></li>
+                        <li><a href="#">Business Intelligence</a></li>
+                        <li><a href="#">Social Marketing</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <ul>
+                        <li>
+                            <h3>Quick Links</h3>
+                        </li>
+                        <li><a href="/secure/about">About</a></li>
+                        <li><a href="/secure/service">Services</a></li>
+                        <li><a href="/secure/team">Team</a></li>
+                        <li><a href="/secure/tool">Tools</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <ul>
+                        <li>
+                            <h3>Connect with us Socially</h3>
+                        </li>
+                        <li><a href="#" class="twitter"><i class="fa fa-twitter w15 mr5"></i>   Twitter</a></li>
+                        <li><a href="#" class="facebook"><i class="fa fa-facebook w15  mr5"></i> Facebook</a></li>
+                        <li><a href="#" class="instagram"><i class="fa fa-instagram w15  mr5"></i> Instagram</a></li>
+                        <li><a href="#" class="google-plus"><i class="fa fa-google-plus w15  mr5"></i> Google Plus</a></li>
+                        <li><a href="#" class="linkedin"><i class="fa fa-linkedin w15 mr5"></i> LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- New Section -->
-    <section id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Services</h2>
-                <p>We are currently providing the following services: </p>
-            </div>
-    
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="box wow fadeInLeft" style="min-height:270px;">
-                    <div class="icon"><i class="fa fa-"></i></div>
-                    <h4 class="title"><a href="">Product Application / Development</a></h4>
-                    <p class="description">Product, website & application development including understanding the requirements of clients and technology to design with cost efficiently.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <div class="box wow fadeInLeft" data-wow-delay="0.2s" style="min-height:270px;">
-                    <div class="icon"><i class="fa fa-cogs"></i></div>
-                    <h4 class="title"><a href="">Automating Testing, QA</a></h4>
-                    <p class="description">Use our Test Automation & Performance Engineering expertise to cut testing time and effort, streamline QA processes, reduce manual testing and optimize costs.</p>
-                    </div>
-                </div>
-        
-                <div class="col-sm-12 col-md-6">
-                    <div class="box wow fadeInRight" style="min-height:270px;">
-                    <!-- <div class="icon"><i class="fa fa-picture-o"></i></div> -->
-                    <div class="icon"><i class="fa fa-bar-chart"></i></div>
-                        <h4 class="title"><a href="">Business Intelligence</a></h4>
-                        <p class="description">Better insights to collate relevant disparate data into data warehouses and build dashboards for visualization with our Analytics & Business Intelligence Solutions.</p>
-                    </div>
-                </div>
-        
-                <div class="col-lg-6">
-                    <div class="box wow fadeInRight" data-wow-delay="0.2s" style="min-height:270px;">
-                    <div class="icon"><i class="fa fa-map"></i></div>
-                    <h4 class="title"><a href="">Social Marketing</a></h4>
-                    <p class="description">Our social media management services save businesses more time & generate more results. Our company excels in Facebook, Instagram and Google Marketing services.  Whether your business is in real estate, consumer products, or nonprofits, we leads your business to success.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--==========================
-      Clients Section
-    ============================-->
-    <section id="clients" class="wow fadeInUp">
-        <div class="container">
-            <div class="section-header">
-                <h2>Clients</h2>
-                <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-            </div>
-
-            <div class="owl-carousel clients-carousel">
-                <img src="/app/assets/angular/images/clients/client-1.png" alt="">
-                <img src="/app/assets/angular/images/clients/client-2.png" alt="">
-                <img src="/app/assets/angular/images/clients/client-3.png" alt="">
-            </div>
-        </div>
-    </section>
-    <!--==========================
-      Testimonials Section
-    ============================-->
-    <section id="testimonials" class="wow fadeInUp">
-        <div class="container">
-            <div class="section-header">
-                <h2>Products</h2>
-                <p>Currently the team is working in building the various automated apps for the use of daily life.</p>
-            </div>
-            <div class="owl-carousel testimonials-carousel">
-                <div class="testimonial-item">
-                    <img src="/app/assets/angular/images/testimonial-1.jpg" class="testimonial-img" alt="">
-                    <h3>FMS</h3>
-                    <p>
-                        <img src="/app/assets/angular/images/quote-sign-left.png" class="quote-sign-left" alt="">
-                        FMS(Fitness Management System) is a comprehensive, high-tech club management solution for fitness clubs, sports facilities and gyms which drives business owners around the world to reach their professional excellence. Enjoy a gym management software ready to tackle all of your management needs: sales, membership management, billing, booking, marketing and reporting.
-                        <img src="/app/assets/angular/images/quote-sign-right.png" class="quote-sign-right" alt="">
-                    </p>
-                    <div style="padding-bottom: 20px;"></div>
-                </div>
-                <div class="testimonial-item">
-                    <img src="/app/assets/angular/images/testimonial-2.jpg" class="testimonial-img" alt="">
-                    <h3>ABM</h3>
-                    <p>
-                        <img src="/app/assets/angular/images/quote-sign-left.png" class="quote-sign-left" alt="">
-                        ABM(Automatic Biller Manager) is a comprehensive tool designed to do the billing in a innovative and smart way.
-                        <img src="/app/assets/angular/images/quote-sign-right.png" class="quote-sign-right" alt="">
-                    </p>
-                    <div style="padding-bottom: 20px;"></div>
-                </div>
-    
-                <!-- <div class="testimonial-item">
-                    <p>
-                        <img src="/app/assets/angular/images/quote-sign-left.png" class="quote-sign-left" alt="">
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                        <img src="/app/assets/angular/images/quote-sign-right.png" class="quote-sign-right" alt="">
-                    </p>
-                    <img src="/app/assets/angular/images/testimonial-2.jpg" class="testimonial-img" alt="">
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                </div>
-    
-                <div class="testimonial-item">
-                    <p>
-                        <img src="/app/assets/angular/images/quote-sign-left.png" class="quote-sign-left" alt="">
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                        <img src="/app/assets/angular/images/quote-sign-right.png" class="quote-sign-right" alt="">
-                    </p>
-                    <img src="/app/assets/angular/images/testimonial-3.jpg" class="testimonial-img" alt="">
-                    <h3>Jena Karlis</h3>
-                    <h4>Store Owner</h4>
-                </div>
-    
-                <div class="testimonial-item">
-                    <p>
-                        <img src="/app/assets/angular/images/quote-sign-left.png" class="quote-sign-left" alt="">
-                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                        <img src="/app/assets/angular/images/quote-sign-right.png" class="quote-sign-right" alt="">
-                    </p>
-                    <img src="/app/assets/angular/images/testimonial-4.jpg" class="testimonial-img" alt="">
-                    <h3>Matt Brandon</h3>
-                    <h4>Freelancer</h4>
-                </div>
-    
-                <div class="testimonial-item">
-                    <p>
-                        <img src="/app/assets/angular/images/quote-sign-left.png" class="quote-sign-left" alt="">
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                        <img src="/app/assets/angular/images/quote-sign-right.png" class="quote-sign-right" alt="">
-                    </p>
-                    <img src="/app/assets/angular/images/testimonial-5.jpg" class="testimonial-img" alt="">
-                    <h3>John Larson</h3>
-                    <h4>Entrepreneur</h4>
-                </div> -->
-            </div>
-        </div>
-    </section><!-- #testimonials -->
-    <!--==========================
-      Call To Action Section
-    ============================-->
-    <!-- <section id="call-to-action" class="wow fadeInUp">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9 text-center text-lg-left">
-                    <h3 class="cta-title">Call To Action</h3>
-                    <p class="cta-text"> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-lg-3 cta-btn-container text-center">
-                    <a class="cta-btn align-middle" href="#">Call To Action</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    
-    <!--==========================
-    Our Team Section
-    ============================-->
-    <section id="team" class="wow fadeInUp">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Team</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-md-offset-3">
-                    <div class="member">
-                        <div class="pic"><img src="/app/assets/angular/images/team-1.jpg" alt=""></div>
-                            <div class="details">
-                                <h4>Vineet Vijay</h4>
-                                <span>Chief Executive Officer</span>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-6">
-                        <div class="member">
-                            <div class="pic"><img src="/app/assets/angular/images/team-3.jpg" alt=""></div>
-                                <div class="details">
-                                    <h4>Akshay Soni</h4>
-                                    <span>CTO</span>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>        
-    </section><!-- #team -->
-</main>    
+    </div>
+    <div class="footer-bottom">
+        <h5>Copyright 2018. All rights reserved.</h5>
+    </div>
+</footer>

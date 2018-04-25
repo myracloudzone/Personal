@@ -14,6 +14,20 @@ GMApp.config(['$routeProvider', '$stateProvider', '$locationProvider','notificat
             templateUrl: '/app/assets/angular/views/home.html',
             controller: 'HomeCtrl'
         })
+        .state('contact', {
+            url: prefix+'/contact',
+            templateUrl: '/app/assets/angular/views/contact.html',
+            controller: 'ContactCtrl'
+        })
+        .state('team', {
+            url: prefix+'/team',
+            templateUrl: '/app/assets/angular/views/team.html',
+            controller: 'TeamCtrl'
+        })
+        .state('error', {
+            url: prefix + '/error',
+            templateUrl: '/app/assets/angular/views/error.html',
+        })
         // .state('login', {
         //     url: prefix+'/login',
         //     templateUrl: '/app/assets/angular/views/login.html',

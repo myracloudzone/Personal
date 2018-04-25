@@ -1304,7 +1304,7 @@ a:focus, a:hover {
   Testimonial section
 ==================================================================*/
 .testimonial {
-  padding-top: 100px;
+  padding-top: 25px;
   background: #28ABE3;
   position: relative;
   padding-bottom: 0px;
@@ -1323,10 +1323,13 @@ a:focus, a:hover {
 }
 
 .testimonial .item i {
-  font-size: 60px;
+  font-size: 40px;
   color: #fff;
   margin-bottom: 50px;
   display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .testimonial .item .client-details {
@@ -1569,7 +1572,7 @@ a:focus, a:hover {
 .top-footer {
   background-color: #222222;
   border-top: 1px solid #404040;
-  padding: 100px 0 80px;
+  padding: 35px 0 35px;
 }
 
 .top-footer h3 {
