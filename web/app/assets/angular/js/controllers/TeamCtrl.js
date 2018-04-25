@@ -2,7 +2,7 @@ var TeamCtrl = GMApp.controller('TeamCtrl', ['$scope', '$rootScope', '$statePara
     $scope.init = function() {
         setTimeout(function() {
             $('.navigation').addClass('darkHeader');
-        }, 100);
+        }, 500);
         
     }
     $scope.init(); 

@@ -2,7 +2,7 @@ var ContactCtrl = GMApp.controller('ContactCtrl', ['$scope', '$rootScope', '$sta
     $scope.init = function() {
         setTimeout(function() {
             $('.navigation').addClass('darkHeader');
-        }, 100);
+        }, 500);
         
     }
     $scope.init();
