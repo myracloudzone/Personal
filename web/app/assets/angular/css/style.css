@@ -36,3 +36,10 @@
   padding-bottom: 10px !important;
   background: #F6F6F6;
 }
+.media-wrapper {
+  height: 270px;
+}
+.media-wrapper img {
+  height: 260px;
+  margin: 0 auto;
+}
