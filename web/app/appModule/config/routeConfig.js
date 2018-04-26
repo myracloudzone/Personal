@@ -29,6 +29,11 @@ GMApp.config(['$routeProvider', '$stateProvider', '$locationProvider','notificat
             templateUrl: '/app/assets/angular/views/service.html',
             controller: 'ServiceCtrl'
         })
+        .state('about', {
+            url: prefix+'/about',
+            templateUrl: '/app/assets/angular/views/about.html',
+            controller: 'AboutCtrl'
+        })
         .state('error', {
             url: prefix + '/error',
             templateUrl: '/app/assets/angular/views/error.html',

@@ -29,5 +29,34 @@ var scroll = new SmoothScroll('a[href*="#"]');
             $(".navigation").removeClass("sticky-header");
         }
     });
-$scope.init();                 
+
+
+$scope.openPayment = function() {
+    var options = {
+        "key": "rzp_test_8euD8aLWlG8uRb",
+        "amount": "100",
+        "name": "Grownix Solution",
+        "description": "Pay/Donate",
+        "image": "/app/assets/angular/images/logo.png",
+        "handler": function (response){
+            alert(response.razorpay_payment_id);
+        },
+        "prefill": {
+            "name": "Grownix Solution",
+            "email": ""
+        },
+        "notes": {
+            "address": "Pay/Donate"
+        },
+        "theme": {
+            "color": "#F37254"
+        }
+    };
+    var rzp1 = new Razorpay(options);
+    rzp1.open();
+}    
+$scope.init();    
+
+
+
 }]);
