@@ -2,13 +2,14 @@ var TeamCtrl = GMApp.controller('TeamCtrl', ['$scope', '$rootScope', '$statePara
     $scope.init = function() {
         setTimeout(function() {
             $('.navigation').addClass('darkHeader');
+            $('.testimonial-slider').slick({
+                infinite: true,
+                arrows:false,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
         }, 500);
-        $('.testimonial-slider').slick({
-            infinite: true,
-            arrows:false,
-            autoplay: true,
-            autoplaySpeed: 3000
-        });
+        
         
     }
     $scope.init(); 
