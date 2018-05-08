@@ -9,7 +9,7 @@ var ContactCtrl = GMApp.controller('ContactCtrl', ['$scope', '$rootScope', '$sta
     $scope.sendEmail = function() {
         var postData = {to : "akshay.soni@infoobjects.com", subject : "Test Send Grid", body : "Hi Akshay"};
         $http({
-            url: 'http://localhost:90/service/common/sendEmail',
+            url: 'https://grownixindia.com/service/common/sendEmail',
             method: "POST",
             data: postData,
             headers: {'Content-Type': 'application/json'}
