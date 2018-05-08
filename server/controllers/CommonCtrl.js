@@ -7,7 +7,7 @@ var mailer = require('../lib/Mailer.js');
 module.exports = function (app) {
 	var controller = {};
 	controller.sendEmail = function(req, res, next) {
-		mailer.sendMail(req.body.to, req.body.subject, req.body.body, function() {
+		mailer.sendMail(req.body.to, req.body.subject, req.body.message, function() {
 			res.send("Sent Successfully.");
 		});
     }
