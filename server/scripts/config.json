@@ -1,0 +1,17 @@
+{
+    "connConfig": {
+        "client": "mariasql",
+        "debug": false,
+        "connection": {
+            "host": "localhost",
+            "user": "root",
+            "password": "",
+            "db": "half_dome_gym_app",
+            "multipleStatements": true
+        }
+    },
+    "logFile": "logs.log",
+    "outputFolder" : "/GYM-App",
+    "jobInterval": "* * * * * admin_myra_1234",
+    "queryDebugMode": false
+}
