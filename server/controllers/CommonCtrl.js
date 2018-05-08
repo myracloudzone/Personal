@@ -11,7 +11,7 @@ module.exports = function (app) {
 		data = data + "<br><b>Email</b> : "+req.body.email;
 		data = data + "<br><b>Mobile</b> : "+req.body.mobile;
 		data = data + "<br><b>Subject</b> : "+req.body.subject;
-		data = data + "<br><b>Message</b> : <p>"+req.body.subject+"</p>";
+		data = data + "<br><b>Message</b> : <p>"+req.body.message+"</p>";
 		mailer.sendMail(req.body.to, req.body.subject, data, function() {
 			res.send("Sent Successfully.");
 		});
