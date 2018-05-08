@@ -1,5 +1,5 @@
 var ContactCtrl = GMApp.controller('ContactCtrl', ['$scope', '$rootScope', '$stateParams', '$filter', '$state','$location', '$http', 'notificationService', function($scope, $rootScope, $stateParams,  $filter, $state, $location, $http, notificationService){
-    $scope.message = {to : "info@grownixindia.com"};
+    $scope.message = {to : "contact@grownixindia.com"};
     $scope.init = function() {
         setTimeout(function() {
             $('.navigation').addClass('darkHeader');
