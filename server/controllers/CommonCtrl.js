@@ -56,12 +56,11 @@ module.exports = function (app) {
 				  .clip()
 				  .capture()
 				  .then(img => {
-					ress.send(img);
-				// 	fs.writeFileSync(__dirname + '/example.png', img)
-				// 		var bitmap = fs.readFileSync(__dirname + '/example.png');
-				// 		var data2 = new Buffer(bitmap).toString('base64');
-				// 		ress.send(data2);
-				//   })
+					fs.writeFileSync('/myraAPP/tmp/' + '/example.png', img)
+						var bitmap = fs.readFileSync(__dirname + '/example.png');
+						var data2 = new Buffer(bitmap).toString('base64');
+						ress.send("https://grownixindia.com/media/tmp/example.png");
+				  })
 					
 			});
 		})
