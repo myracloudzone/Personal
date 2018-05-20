@@ -28,8 +28,8 @@ module.exports = function (app) {
             return res.status(400).send('No files were uploaded.');
 		}
 		console.log(req.files)
+		let testFile = req.files.attachment;
 		let fileName = (new Date()).getTime()+testFile.originalFilename;
-        let testFile = req.files.file;
         let filePath = fileName;
         let actualPath = './' + filePath;
         fse.copy(testFile.path, actualPath, err => {
