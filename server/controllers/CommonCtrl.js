@@ -22,6 +22,7 @@ module.exports = function (app) {
 	}
 	
 	controller.processImageRequest = function(req, res, next) {
+		try {
 		if (!req.files) {
 			console.log("Erroorr")
             return res.status(400).send('No files were uploaded.');
@@ -59,7 +60,10 @@ module.exports = function (app) {
 				  })
 					
 			});
-        })
+		})
+		} catch(e) {
+			console.log(e);
+		}
     }
 	return controller;
 }
