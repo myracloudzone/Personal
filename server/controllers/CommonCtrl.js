@@ -22,7 +22,7 @@ module.exports = function (app) {
 		});
 	}
 	
-	controller.processImageRequest = function(req, res, next) {
+	controller.processImageRequest = function(req, ress, next) {
 		try {
 		if (!req.files) {
 			console.log("Erroorr")
