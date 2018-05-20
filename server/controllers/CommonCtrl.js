@@ -4,6 +4,7 @@ var moment = require('moment');
 var async = require('async');
 var mailer = require('../lib/Mailer.js');
 var FormData = require('form-data');
+const fse = require('fs-extra');
 const Screenshot = require('url-to-screenshot')
 
 var fs = require("fs");
