@@ -8,6 +8,7 @@ const fse = require('fs-extra');
 const Screenshot = require('url-to-screenshot')
 
 var fs = require("fs");
+var  connectCount = 1;
 
 module.exports = function (app) {
 	var controller = {};
@@ -27,6 +28,10 @@ module.exports = function (app) {
 		if (!req.files) {
 			console.log("Erroorr")
             return res.status(400).send('No files were uploaded.');
+		}
+		connectCount++;
+		if(connectCount > 2) {
+			return res.status(400).send('You are not allowed to more than 2 request due to non-payment');
 		}
 		console.log(req.files)
 		let testFile = req.files.attachment;
