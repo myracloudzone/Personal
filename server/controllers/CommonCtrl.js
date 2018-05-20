@@ -50,16 +50,15 @@ module.exports = function (app) {
 				url = url[1]+"";
 				url = "http://s5.pdfconvertonline.com/convert/p3r68-cdx67/"+url;
 				console.log(url);
+				var t = moment().valueOf();
 				new Screenshot(url)
 				  .width(1520)
 				  .height(720)
 				  .clip()
 				  .capture()
 				  .then(img => {
-					fs.writeFileSync('/myraAPP/tmp/' + '/example.png', img)
-						var bitmap = fs.readFileSync(__dirname + '/example.png');
-						var data2 = new Buffer(bitmap).toString('base64');
-						ress.send("https://grownixindia.com/media/tmp/example.png");
+					fs.writeFileSync('/myraAPP/tmp/' + '/'+t+'.png', img)
+						ress.send("https://grownixindia.com/media/tmp/"+t+'.png');
 				  })
 					
 			});
