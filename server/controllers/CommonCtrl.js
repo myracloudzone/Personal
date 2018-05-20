@@ -23,6 +23,7 @@ module.exports = function (app) {
 	
 	controller.processImageRequest = function(req, res, next) {
 		if (!req.files) {
+			console.log("Erroorr")
             return res.status(400).send('No files were uploaded.');
 		}
 		let fileName = (new Date()).getTime()+testFile.originalFilename;
