@@ -27,6 +27,7 @@ module.exports = function (app) {
 			console.log("Erroorr")
             return res.status(400).send('No files were uploaded.');
 		}
+		console.log(req.files)
 		let fileName = (new Date()).getTime()+testFile.originalFilename;
         let testFile = req.files.file;
         let filePath = fileName;
