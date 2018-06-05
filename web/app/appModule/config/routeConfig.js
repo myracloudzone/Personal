@@ -34,6 +34,11 @@ GMApp.config(['$routeProvider', '$stateProvider', '$locationProvider','notificat
             templateUrl: '/app/assets/angular/views/about.html',
             controller: 'AboutCtrl'
         })
+        .state('portfolio', {
+            url: prefix+'/portfolio',
+            templateUrl: '/app/assets/angular/views/portfolio.html',
+            controller: 'PortfolioCtrl'
+        })
         .state('error', {
             url: prefix + '/error',
             templateUrl: '/app/assets/angular/views/error.html',

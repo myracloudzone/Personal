@@ -1655,6 +1655,9 @@ a:focus, a:hover {
 .page-404 h1 {
   font-size: 200px;
 }
+body {
+  overflow-x: hidden;
+}
 
 /*============================================================
 	For Small Desktop
@@ -1887,6 +1890,9 @@ a:focus, a:hover {
   .navbar-collapse.in {
     overflow-y: inherit;
   }
+  .navbar-collapse {
+    overflow-y: auto !important;
+  }
   .navbar-brand {
     padding: 10px 0 10px 10px;
   }
@@ -1895,6 +1901,10 @@ a:focus, a:hover {
   }
   .navbar-nav {
     margin: 0 -15px;
+    overflow-y: scroll;
+  }
+  .navbar {
+    background: rgba(0,0,0,.8);
   }
   .navbar-inverse .navbar-nav li a {
     line-height: 45px;
