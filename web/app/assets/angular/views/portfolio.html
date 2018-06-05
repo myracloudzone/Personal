@@ -1,0 +1,62 @@
+<div ng-include="'/app/assets/angular/views/header.html'" ng-controller="HeaderCtrl"></div>
+<section class="service-2 section team xx">
+        <div class="container">
+            <div class="row team-row">
+                <div class="text-center">
+                    <h2>Portfolio</h2>
+                    <div class="border"></div>
+                </div>
+                <div class="col-md-12 col-sm-12">
+                    <div class="row ">
+                        <div class="col-md-12 col-sm-12 col-xs-12 service-item1" style="padding-top:0px; padding-bottom: 0px; background: #fff;">
+                            <div class="row headerRow serviceHeader">
+                                <div class="col-sm-12 headerColor">
+                                    <h3>M-InfoMas</h3>
+                                </div>
+                                <div class="col-sm-12 programBox">
+                                    <p>M~InfoMaS is a management system which can be used by Maharishi Arvind Institute Of Engineering & Technology, Jaipur to store, manage and process data regarding there day to day work and can use that data to draw helpful information for decision making. </p>
+                                    <p>This system provides a very effective way to record, process and retrieve information. In this system we can store many kind of information. In this we have provided different forms for each type of information. Every form can be used to fill, change or retrieve some kind on information in its own way. Every forum also has their level of authentication required so only a user with at least that much authentication can access that forum.</p>
+                                    <div id="lightgallery">
+                                        <span data-src="{{image}}" ng-repeat="image in minfomasImages" >
+                                            <img style="width: 100px; height: 100px;" src="{{image}}" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 service-item1" style="padding-top:0px; padding-bottom: 0px; background: #fff; margin-top: 10px;">
+                            <div class="row headerRow serviceHeader">
+                                <div class="col-sm-12 headerColor">
+                                    <h3>IIMSS Website</h3>
+                                </div>
+                                <div class="col-sm-12 programBox">
+                                    <p>IIMSS is a website developed on Angular and Bootstrap. Its a organizational website.</p>
+                                    <div id="lightgallery2">
+                                        <span data-src="{{image}}" ng-repeat="image in iimssImages" >
+                                            <img style="width: 100px; height: 100px;" src="{{image}}" />
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+</section> 
+<div ng-include="'/app/assets/angular/views/footer.html'"></div>
+<style>
+    .serviceHeader {
+        padding-bottom: 0px;
+        color: #fff;
+    }
+    .headerColor {
+        background: rgba(0,0,0,.6);
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .programBox {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+</style>
